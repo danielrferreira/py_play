@@ -46,4 +46,13 @@ def import_file(input_file,header,delimiter=','):
 #Function call example
 header = ('artist','album','country','region','year_artist','label','year_album')                    
 input_file='input2.txt'
-db = import_file(input_file,header)   
+db = import_file(input_file,header) 
+
+#%%
+def retrieve(i):
+    print(db['album'][i],'by',db['artist'][i],'. Year of Release:', db['year_album'][i])           
+            
+#%%
+
+retrieve(38)     
+
