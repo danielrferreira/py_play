@@ -6,4 +6,5 @@ In the past 15 years I used a combination of SAS, SQL and R to accomplish my ana
 
 ## Index
 - [Caesar Cypher Encryption](https://github.com/danielrferreira/py_play/tree/main/caesar_cypher): From an 'encrypted' txt file, creates a new one with the translated text.
-- [Import From Scratch](https://github.com/danielrferreira/py_play/blob/main/import_from_scratch): Import delimited file with open file command.    
+- [Import From Scratch](https://github.com/danielrferreira/py_play/blob/main/import_from_scratch): Import delimited file with open file command.
+- [Linear Algebra = Fun]()    
