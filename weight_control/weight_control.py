@@ -43,6 +43,7 @@ def week_report(w_current,w_past,e,f):
     print(report_break)
     print(f'\nYour weight week average is {w_current} lbs ({w_kg_current} kgs)')
     print(f'\nIn the last 7 days, your balance is {diff:.2} lbs ({diff_kg:.2} kgs). Weight loss percentage = {diff_pct:.2%}')
+    print(f'\nSince you started to track, you lost {(168.2-w_current):.2} lbs ({((168.2-w_current)*0.45359237):.2} kgs).')
     print(f'\nYou exercised {e} times.',message1)
     print(f'\nYour week nutrition level is {f}.',message2)
 
@@ -67,6 +68,7 @@ def time_graph(data):
     plt.figure(figsize=(10, 6))
     plt.plot(data.index, data['weight_lbs'], label='Daily Weight', color='blue')
     plt.plot(data.index, data['avg_7d'], label='Last 7 d average', color='red', linestyle='--')
+    plt.axhline(y=154.324, color='green', linestyle=':', label='Goal')
     plt.title('weight over time')
     plt.xticks(rotation=45)
     plt.xlabel('Date')
