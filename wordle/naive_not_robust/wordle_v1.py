@@ -10,7 +10,7 @@ import pandas as pd
 import numpy as np
 import os
 import time
-directory = '/Users/danielferreira/Documents/Python_training/wordle'
+directory = '../data'
 file = 'sgb-words.csv'
 os.chdir(directory)
 all = pd.read_csv(file, names=['words'])

@@ -16,7 +16,7 @@ import matplotlib.pyplot as plt
 import os
 import numpy as np
 
-directory = '/Users/danielferreira/Documents/Python_training/weight'
+directory = '../data'
 file = 'weight.csv'
 os.chdir(directory)
 report_break = '-'*70
